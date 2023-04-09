@@ -32,6 +32,7 @@ import {
   Social,
   TestimonialSection,
   TimelineItem,
+  achievementItem,
 } from './dataDef';
 
 
@@ -184,6 +185,25 @@ export const experience: TimelineItem[] = [
 
 
 /**
+ * Achievement section
+ */
+export const achievements: achievementItem[] = [
+  {
+    content: <p>• Secured 2nd* Position, in BU Smart India Hackathon 2022 among 50+ registered teams at BennettUniversity, where I worked in a team of 6.</p>,
+  },
+  {
+    content: <p>• Secured 3rd* Position, in Compathon 2022 among 100 registered teams at Bennett University, where I worked as team lead in a team of 5.</p>,
+  },
+  {
+    content: <p>• Took part in Techathon 3.0 organised by iNeuron.ai where there was 500+ teams.</p>,
+  },
+  {
+    content: <p>• Geek For Geeks - 100+ questions, Code Chef - 2-star, Hacker rank - 5-star python.</p>,
+  },
+];
+
+
+/**
      * Skills section
      */
 export const skills: SkillGroup[] = [
@@ -248,6 +268,9 @@ export const skills: SkillGroup[] = [
     ],
   },
 ];
+
+
+// Resume section ends
 
 
 /**

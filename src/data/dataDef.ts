@@ -66,6 +66,14 @@ export interface TimelineItem {
   content: JSX.Element;
 }
 
+
+/**
+ * Achievement section
+ */
+export interface achievementItem {
+  content: JSX.Element;
+}
+
 /**
  * Stat section
  */
