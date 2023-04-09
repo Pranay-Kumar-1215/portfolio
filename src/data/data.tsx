@@ -113,9 +113,107 @@ export const aboutData: About = {
 };
 
 /**
- * Skills section
+ * Resume section -- TODO: Standardize resume contact format or offer MDX
  */
+export const education: TimelineItem[] = [
+  {
+    date: 'June 2020 - Present',
+    title: 'Bennett University',
+    location: 'Bachelor of Technology in Computer Science',
+    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
+  },
+  {
+    date: '2018 - 2020',
+    title: 'Venkateshwar International School',
+    location: 'Senior Secondary School',
+    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
+  },
+  {
+    date: 'uptil 2018',
+    title: 'American Montessori Public School',
+    location: 'High School',
+    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
+  },
+];
+
+/**
+ * Experience section
+ */
+export const experience: TimelineItem[] = [
+  {
+    date: 'mid-June 2022 – mid July 2022',
+    location: 'Data Analytics Intern, Data Analytics',
+    title: 'Hewlett Packard Enterprise in collaboration with National University of Singapore',
+    content: (
+      <ul>
+        <li>
+         • Worked under the guidance of Professor Dr Amirhassan Monajemi and Dr Tan Wee Kek for developing
+          Gradient descent algorithms, training ANN, CNN, RNN, GANs, SVMs, text mining algo and learning how they
+          work in developing facial recognition and deep learning models.
+        </li>
+        <li>
+         • Learned about concepts of Cross-industry standard process for data mining (CRISP-DM), Business Analytic,
+          statistical analysis for summarizing data Dr Lek Hsiang Hui.
+        </li>
+      </ul>
+    ),
+  },
+  {
+    date: 'Sept 2021 – Sept 2022',
+    location: 'Social Media Head',
+    title: 'Indian Blockchain Fraternity',
+    content: (
+      <ul>
+        <li>
+         • Have been working in a team of 10 member to spread awareness about blockchain fundamentals in colleges
+          and universities.
+        </li>
+        <li>
+         • Helped reach out to 10k 15k new people over the tenure.
+        </li>
+      </ul>
+    ),
+  },
+];
+
+/**
+     * Skills section
+     */
 export const skills: SkillGroup[] = [
+  {
+    name: 'Cloud Platforms',
+    skills: [
+      {
+        name: 'AWS',
+        level: 9,
+      },
+      {
+        name: 'Azure',
+        level: 5,
+      },
+      {
+        name: 'GCP',
+        level: 7,
+      },
+    ],
+  },
+  {
+    name: 'Languages',
+    skills: [
+      {
+        name: 'Python',
+        level: 9,
+      },
+      {
+        name: 'Cpp',
+        level: 8,
+      },
+      {
+        name: 'HTML, CSS, JS',
+        level: 6,
+      },
+    ],
+  },
   {
     name: 'Spoken languages',
     skills: [
@@ -124,46 +222,8 @@ export const skills: SkillGroup[] = [
         level: 10,
       },
       {
-        name: 'French',
-        level: 4,
-      },
-      {
-        name: 'Spanish',
-        level: 3,
-      },
-    ],
-  },
-  {
-    name: 'Frontend development',
-    skills: [
-      {
-        name: 'React',
-        level: 9,
-      },
-      {
-        name: 'Typescript',
-        level: 7,
-      },
-      {
-        name: 'GraphQL',
-        level: 6,
-      },
-    ],
-  },
-  {
-    name: 'Backend development',
-    skills: [
-      {
-        name: 'Node.js',
-        level: 8,
-      },
-      {
-        name: 'Rust',
-        level: 5,
-      },
-      {
-        name: 'Golang',
-        level: 4,
+        name: 'Hindi',
+        level: 10,
       },
     ],
   },
@@ -177,10 +237,6 @@ export const skills: SkillGroup[] = [
       {
         name: 'Flutter',
         level: 4,
-      },
-      {
-        name: 'Swift',
-        level: 3,
       },
     ],
   },
@@ -222,48 +278,6 @@ export const portfolioItems: PortfolioItem[] = [
   },
 ];
 
-/**
- * Resume section -- TODO: Standardize resume contact format or offer MDX
- */
-export const education: TimelineItem[] = [
-  {
-    date: 'April 2007',
-    location: 'Clown college',
-    title: 'Masters in Beer tasting',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
-  },
-  {
-    date: 'March 2003',
-    location: 'School of Business',
-    title: 'What did you study 101',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
-  },
-];
-
-export const experience: TimelineItem[] = [
-  {
-    date: 'March 2010 - Present',
-    location: 'Awesome Development Company',
-    title: 'Senior UX Engineer',
-    content: (
-      <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
-      </p>
-    ),
-  },
-  {
-    date: 'March 2007 - February 2010',
-    location: 'Garage Startup Studio',
-    title: 'Junior bug fixer',
-    content: (
-      <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
-      </p>
-    ),
-  },
-];
 
 /**
  * Testimonial section
