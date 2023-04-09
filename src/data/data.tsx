@@ -98,16 +98,17 @@ export const heroData: Hero = {
  */
 export const aboutData: About = {
   profileImageSrc: profilepic,
-  description: `Use this bio section as your way of describing yourself and saying what you do, what technologies you like
-  to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing
-  in.`,
+  description: `I am currently pursuing a BTech in Computer Science. I have also learneda a lot
+  in the area of cloud computing and software development methodologies. In my free time, I have
+  working on personal projects help me to further develop my skills and gain hands-on experience 
+  in DevOps and software development. I am excited to continue learning and growing`,
   aboutItems: [
-    {label: 'Location', text: 'Victoria, BC', Icon: MapIcon},
-    {label: 'Age', text: '29', Icon: CalendarIcon},
-    {label: 'Nationality', text: 'Canadian / Irish', Icon: FlagIcon},
-    {label: 'Interests', text: 'Motorcycles, Muay Thai, Banjos', Icon: SparklesIcon},
-    {label: 'Study', text: 'University of Victoria', Icon: AcademicCapIcon},
-    {label: 'Employment', text: 'Instant Domains, inc.', Icon: OfficeBuildingIcon},
+    {label: 'Location', text: 'Gurgaon, Haryana', Icon: MapIcon},
+    {label: 'Age', text: '21', Icon: CalendarIcon},
+    {label: 'Nationality', text: 'Indian', Icon: FlagIcon},
+    {label: 'Interests', text: 'Cars, PC Games, ', Icon: SparklesIcon},
+    {label: 'Study', text: 'Bennett University', Icon: AcademicCapIcon},
+    {label: 'Employment', text: 'Student', Icon: OfficeBuildingIcon},
   ],
 };
 
