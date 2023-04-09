@@ -42,9 +42,9 @@ Deploying your new site to Vercel is simple, and can be done by following their 
 
 ### Pranay Kumar
 
-    <a href="https://twitter.com/Pranaykumar1215">
-    <img src="https://github.com/aritraroy/social-icons/blob/master/twitter-icon.png?raw=true" width="60">
-    </a>
-    <a href="https://www.instagram.com/pip_install_pk/">
-    <img src="https://github.com/aritraroy/social-icons/blob/master/instagram-icon.png?raw=true" width="60">
-    </a>
+<a href="https://twitter.com/Pranaykumar1215">
+<img src="https://github.com/aritraroy/social-icons/blob/master/twitter-icon.png?raw=true" width="60">
+</a>
+<a href="https://www.instagram.com/pip_install_pk/">
+<img src="https://github.com/aritraroy/social-icons/blob/master/instagram-icon.png?raw=true" width="60">
+</a>
