@@ -38,8 +38,8 @@ import {
  * Page meta data
  */
 export const homePageMeta: HomepageMeta = {
-  title: 'React Resume Template',
-  description: "Example site built with Tim Baker's react resume template",
+  title: 'React Resume',
+  description: "Site built by Pranay Kumar",
 };
 
 /**
@@ -63,18 +63,18 @@ export type SectionId = typeof SectionId[keyof typeof SectionId];
  */
 export const heroData: Hero = {
   imageSrc: heroImage,
-  name: `I'm Tim Baker.`,
+  name: `I'm Pranay Kumar`,
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I'm a Victoria based <strong className="text-stone-100">Full Stack Software Engineer</strong>, currently working
-        at <strong className="text-stone-100">Instant Domains</strong> helping build a modern, mobile-first, domain
-        registrar and site builder.
+        I'm a budding <strong className="text-slate-100">Software Engineer</strong>, currently in my semifinal year at  
+         <strong className="text-stone-100"> Bennett University</strong>. I'm passionate about <br></br>
+         <strong className="text-stone-100"> DEVOPS, Data Science</strong>.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        In my free time time, you can catch me training in <strong className="text-stone-100">Muay Thai</strong>,
-        plucking my <strong className="text-stone-100">banjo</strong>, or exploring beautiful{' '}
-        <strong className="text-stone-100">Vancouver Island</strong>.
+        In my free time time, you can catch me learning <strong className="text-stone-200">Data Science</strong>,
+        broadening my learnings <br></br><strong className="text-stone-100">MLOPS</strong>, or Playing video games 
+        like <strong className="text-stone-100">Valorant, CS:GO</strong>.
       </p>
     </>
   ),
