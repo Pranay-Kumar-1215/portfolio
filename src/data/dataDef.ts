@@ -18,8 +18,13 @@ export interface HomepageMeta {
 }
 
 /**
- * Hero section
+ * sectionid
  */
+
+
+/**
+ * Hero section
+*/
 export interface Hero {
   imageSrc: string;
   name: string;
@@ -34,9 +39,10 @@ interface HeroActionItem {
   Icon?: (props: SVGProps<SVGSVGElement>) => JSX.Element;
 }
 
+
 /**
  * About section
- */
+*/
 export interface About {
   profileImageSrc?: string;
   description: string;
@@ -49,39 +55,6 @@ export interface AboutItem {
   Icon?: (props: SVGProps<SVGSVGElement>) => JSX.Element;
 }
 
-/**
- * Stat section
- */
-export interface Stat {
-  title: string;
-  value: number;
-  Icon?: (props: SVGProps<SVGSVGElement>) => JSX.Element;
-}
-
-/**
- * Skills section
- */
-
-export interface Skill {
-  name: string;
-  level: number;
-  max?: number;
-}
-
-export interface SkillGroup {
-  name: string;
-  skills: Skill[];
-}
-
-/**
- * Portfolio section
- */
-export interface PortfolioItem {
-  title: string;
-  description: string;
-  url: string;
-  image: string | StaticImageData;
-}
 
 /**
  * Resume section
@@ -94,18 +67,54 @@ export interface TimelineItem {
 }
 
 /**
+ * Stat section
+ */
+export interface Stat {
+  title: string;
+  value: number;
+  Icon?: (props: SVGProps<SVGSVGElement>) => JSX.Element;
+}
+
+
+/**
+ * Skills section
+ */
+export interface Skill {
+  name: string;
+  level: number;
+  max?: number;
+}
+export interface SkillGroup {
+  name: string;
+  skills: Skill[];
+}
+
+
+/**
+ * Portfolio section
+ */
+export interface PortfolioItem {
+  title: string;
+  description: string;
+  url: string;
+  image: string | StaticImageData;
+}
+
+
+
+/**
  * Testimonial section
  */
 export interface TestimonialSection {
   imageSrc?: string | StaticImageData;
   testimonials: Testimonial[];
 }
-
 export interface Testimonial {
   image?: string;
   name: string;
   text: string;
 }
+
 
 /**
  * Contact section
@@ -115,6 +124,7 @@ export interface ContactSection {
   description: string;
   items: ContactItem[];
 }
+
 
 export const ContactType = {
   Email: 'Email',
@@ -139,6 +149,7 @@ export interface ContactValue {
   Icon: FC<IconProps> | ((props: SVGProps<SVGSVGElement>) => JSX.Element);
   srLabel: string;
 }
+
 
 /**
  * Social items

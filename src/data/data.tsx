@@ -34,6 +34,7 @@ import {
   TimelineItem,
 } from './dataDef';
 
+
 /**
  * Page meta data
  */
@@ -41,6 +42,7 @@ export const homePageMeta: HomepageMeta = {
   title: 'React Resume',
   description: "Site built by Pranay Kumar",
 };
+
 
 /**
  * Section definition
@@ -57,6 +59,7 @@ export const SectionId = {
 } as const;
 
 export type SectionId = typeof SectionId[keyof typeof SectionId];
+
 
 /**
  * Hero section
@@ -93,6 +96,7 @@ export const heroData: Hero = {
   ],
 };
 
+
 /**
  * About section
  */
@@ -112,8 +116,9 @@ export const aboutData: About = {
   ],
 };
 
+
 /**
- * Resume section -- TODO: Standardize resume contact format or offer MDX
+ * Resume section
  */
 export const education: TimelineItem[] = [
   {
@@ -135,6 +140,7 @@ export const education: TimelineItem[] = [
     content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
   },
 ];
+
 
 /**
  * Experience section
@@ -175,6 +181,7 @@ export const experience: TimelineItem[] = [
     ),
   },
 ];
+
 
 /**
      * Skills section
@@ -242,6 +249,7 @@ export const skills: SkillGroup[] = [
   },
 ];
 
+
 /**
  * Portfolio section
  */
@@ -303,10 +311,10 @@ export const testimonial: TestimonialSection = {
   ],
 };
 
+
 /**
  * Contact section
  */
-
 export const contact: ContactSection = {
   headerText: 'Get in touch.',
   description: 'want to get in touch? fill out the form or send me an email',
@@ -333,6 +341,7 @@ export const contact: ContactSection = {
     },
   ],
 };
+
 
 /**
  * Social items
