@@ -84,7 +84,7 @@ export const heroData: Hero = {
   ),
   actions: [
     {
-      href: '/assets/resume.pdf',
+      href: 'https://drive.google.com/file/d/1c_57pApWapmV9FBrFRcEg98dceR7Wchb/view?usp=sharing',
       text: 'Resume',
       primary: true,
       Icon: DownloadIcon,
@@ -176,7 +176,7 @@ export const experience: TimelineItem[] = [
           and universities.
         </li>
         <li>
-         • Helped reach out to 10k 15k new people over the tenure.
+         • Helped reach out to 10k - 15k new people over the tenure.
         </li>
       </ul>
     ),
@@ -259,7 +259,7 @@ export const skills: SkillGroup[] = [
     skills: [
       {
         name: 'React Native',
-        level: 9,
+        level: 3,
       },
       {
         name: 'Flutter',
