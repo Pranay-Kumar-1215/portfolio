@@ -6,7 +6,7 @@
 
 </div>
 
-### View a [live demo here.](https://portfolio-forked.vercel.app/)
+### View a [live demo here.](https://pranaykumar.vercel.app/)
 
 ## Description
 
