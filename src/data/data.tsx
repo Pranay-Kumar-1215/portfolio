@@ -18,6 +18,7 @@ import porfolioImage1 from '../images/portfolio/portfolio-1.jpg';
 import porfolioImage2 from '../images/portfolio/portfolio-2.jpg';
 import porfolioImage3 from '../images/portfolio/portfolio-3.jpg';
 import porfolioImage4 from '../images/portfolio/portfolio-4.jpg';
+import porfolioImage5 from '../images/portfolio/portfolio-5.jpg';
 import profilepic from '../images/profilepic.jpg';
 import testimonialImage from '../images/testimonial.webp';
 import {
@@ -31,17 +32,15 @@ import {
   Social,
   TestimonialSection,
   TimelineItem,
-  achievementItem,
 } from './dataDef';
 
 /**
  * Page meta data
  */
 export const homePageMeta: HomepageMeta = {
-  title: 'React Resume',
-  description: "Site build by Pranay Kumar",
+  title: 'React Resume Template',
+  description: "Example site built with Tim Baker's react resume template",
 };
-
 
 /**
  * Section definition
@@ -54,7 +53,7 @@ export const SectionId = {
   Resume: 'resume',
   Skills: 'skills',
   Stats: 'stats',
-  Testimonials: 'Certifications',
+  Testimonials: 'testimonials',
 } as const;
 
 export type SectionId = typeof SectionId[keyof typeof SectionId];
@@ -64,18 +63,18 @@ export type SectionId = typeof SectionId[keyof typeof SectionId];
  */
 export const heroData: Hero = {
   imageSrc: heroImage,
-  name: `I'm Pranay Kumar`,
+  name: `I'm Tim Baker.`,
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I'm a budding <strong className="text-slate-100">Software Engineer</strong>, currently in my semifinal year at  
-         <strong className="text-stone-100"> Bennett University</strong>. I'm passionate about <br></br>
-         <strong className="text-stone-100"> DEVOPS, Data Science</strong>.
+        I'm a Victoria based <strong className="text-stone-100">Full Stack Software Engineer</strong>, currently working
+        at <strong className="text-stone-100">Instant Domains</strong> helping build a modern, mobile-first, domain
+        registrar and site builder.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        In my free time time, you can catch me learning <strong className="text-stone-200">Data Science</strong>,
-        broadening my learnings <br></br><strong className="text-stone-100">MLOPS</strong>, or Playing video games 
-        like <strong className="text-stone-100">Valorant, CS:GO</strong>.
+        In my free time time, you can catch me training in <strong className="text-stone-100">Muay Thai</strong>,
+        plucking my <strong className="text-stone-100">banjo</strong>, or exploring beautiful{' '}
+        <strong className="text-stone-100">Vancouver Island</strong>.
       </p>
     </>
   ),
@@ -94,148 +93,28 @@ export const heroData: Hero = {
   ],
 };
 
-
 /**
-* About section
-*/
+ * About section
+ */
 export const aboutData: About = {
   profileImageSrc: profilepic,
-  description: `I am currently pursuing a BTech in Computer Science. I have also learneda a lot
-  in the area of cloud computing and software development methodologies. In my free time, I have
-  working on personal projects help me to further develop my skills and gain hands-on experience 
-  in DevOps and software development. I am excited to continue learning and growing`,
+  description: `Use this bio section as your way of describing yourself and saying what you do, what technologies you like
+  to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing
+  in.`,
   aboutItems: [
-    {label: 'Location', text: 'Gurgaon, Haryana', Icon: MapIcon},
-    {label: 'Age', text: '21', Icon: CalendarIcon},
-    {label: 'Nationality', text: 'Indian', Icon: FlagIcon},
-    {label: 'Interests', text: 'Cars, PC Games, ', Icon: SparklesIcon},
-    {label: 'Study', text: 'Bennett University', Icon: AcademicCapIcon},
-    {label: 'Employment', text: 'Student', Icon: OfficeBuildingIcon},
+    {label: 'Location', text: 'Victoria, BC', Icon: MapIcon},
+    {label: 'Age', text: '29', Icon: CalendarIcon},
+    {label: 'Nationality', text: 'Canadian / Irish', Icon: FlagIcon},
+    {label: 'Interests', text: 'Motorcycles, Muay Thai, Banjos', Icon: SparklesIcon},
+    {label: 'Study', text: 'University of Victoria', Icon: AcademicCapIcon},
+    {label: 'Employment', text: 'Instant Domains, inc.', Icon: OfficeBuildingIcon},
   ],
 };
 
-
 /**
-* Resume section -- TODO: Standardize resume contact format or offer MDX
-*/
-export const education: TimelineItem[] = [
-  {
-    date: 'June 2020 - Present',
-    title: 'Bennett University',
-    location: 'Bachelor of Technology in Computer Science',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
-  },
-  {
-    date: '2018 - 2020',
-    title: 'Venkateshwar International School',
-    location: 'Senior Secondary School',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
-  },
-  {
-    date: 'uptil 2018',
-    title: 'American Montessori Public School',
-    location: 'High School',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
-  },
-];
-
-
-/**
-* Experience section
-*/
-export const experience: TimelineItem[] = [
-  {
-    date: 'mid-June 2022 – mid July 2022',
-    location: 'Data Analytics Intern, Data Analytics',
-    title: 'Hewlett Packard Enterprise in collaboration with National University of Singapore',
-    content: (
-      <ul>
-        <li>
-         • Worked under the guidance of Professor Dr Amirhassan Monajemi and Dr Tan Wee Kek for developing
-          Gradient descent algorithms, training ANN, CNN, RNN, GANs, SVMs, text mining algo and learning how they
-          work in developing facial recognition and deep learning models.
-        </li>
-        <li>
-         • Learned about concepts of Cross-industry standard process for data mining (CRISP-DM), Business Analytic,
-          statistical analysis for summarizing data Dr Lek Hsiang Hui.
-        </li>
-      </ul>
-    ),
-  },
-  {
-    date: 'Sept 2021 – Sept 2022',
-    location: 'Social Media Head',
-    title: 'Indian Blockchain Fraternity',
-    content: (
-      <ul>
-        <li>
-         • Have been working in a team of 10 member to spread awareness about blockchain fundamentals in colleges
-          and universities.
-        </li>
-        <li>
-         • Helped reach out to 10k 15k new people over the tenure.
-        </li>
-      </ul>
-    ),
-  },
-];
-
-/**
-* achievements section
-*/
-export const achievements: achievementItem[] = [
-  {
-    content: <p>• Secured 2nd* Position, in BU Smart India Hackathon 2022 among 50+ registered teams at BennettUniversity, where I worked in a team of 6.</p>,
-  },
-  {
-    content: <p>• Secured 3rd* Position, in Compathon 2022 among 100 registered teams at Bennett University, where I worked as team lead in a team of 5.</p>,
-  },
-  {
-    content: <p>• Took part in Techathon 3.0 organised by iNeuron.ai where there was 500+ teams.</p>,
-  },
-  {
-    content: <p>• Geek For Geeks - 100+ questions, Code Chef - 2-star, Hacker rank - 5-star python.</p>,
-  },
-];
-
-/**
-* Skills section
-*/
+ * Skills section
+ */
 export const skills: SkillGroup[] = [
-  {
-    name: 'Cloud Platforms',
-    skills: [
-      {
-        name: 'AWS',
-        level: 9,
-      },
-      {
-        name: 'Azure',
-        level: 5,
-      },
-      {
-        name: 'GCP',
-        level: 7,
-      },
-    ],
-  },
-  {
-    name: 'Languages',
-    skills: [
-      {
-        name: 'Python',
-        level: 9,
-      },
-      {
-        name: 'Cpp',
-        level: 8,
-      },
-      {
-        name: 'HTML, CSS, JS',
-        level: 6,
-      },
-    ],
-  },
   {
     name: 'Spoken languages',
     skills: [
@@ -244,8 +123,46 @@ export const skills: SkillGroup[] = [
         level: 10,
       },
       {
-        name: 'Hindi',
-        level: 10,
+        name: 'French',
+        level: 4,
+      },
+      {
+        name: 'Spanish',
+        level: 3,
+      },
+    ],
+  },
+  {
+    name: 'Frontend development',
+    skills: [
+      {
+        name: 'React',
+        level: 9,
+      },
+      {
+        name: 'Typescript',
+        level: 7,
+      },
+      {
+        name: 'GraphQL',
+        level: 6,
+      },
+    ],
+  },
+  {
+    name: 'Backend development',
+    skills: [
+      {
+        name: 'Node.js',
+        level: 8,
+      },
+      {
+        name: 'Rust',
+        level: 5,
+      },
+      {
+        name: 'Golang',
+        level: 4,
       },
     ],
   },
@@ -260,13 +177,17 @@ export const skills: SkillGroup[] = [
         name: 'Flutter',
         level: 4,
       },
+      {
+        name: 'Swift',
+        level: 3,
+      },
     ],
   },
 ];
 
 /**
-* Portfolio section
-*/
+ * Portfolio section
+ */
 export const portfolioItems: PortfolioItem[] = [
   {
     title: 'Project title 1',
@@ -291,6 +212,55 @@ export const portfolioItems: PortfolioItem[] = [
     description: 'Give a short description of your project here.',
     url: 'https://timbaker.me',
     image: porfolioImage4,
+  },
+  {
+    title: 'Project title 5',
+    description: 'Give a short description of your project here.',
+    url: 'https://timbaker.me',
+    image: porfolioImage5,
+  },
+];
+
+/**
+ * Resume section -- TODO: Standardize resume contact format or offer MDX
+ */
+export const education: TimelineItem[] = [
+  {
+    date: 'April 2007',
+    location: 'Clown college',
+    title: 'Masters in Beer tasting',
+    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
+  },
+  {
+    date: 'March 2003',
+    location: 'School of Business',
+    title: 'What did you study 101',
+    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
+  },
+];
+
+export const experience: TimelineItem[] = [
+  {
+    date: 'March 2010 - Present',
+    location: 'Awesome Development Company',
+    title: 'Senior UX Engineer',
+    content: (
+      <p>
+        Describe work, special projects, notable achievements, what technologies you have been working with, and
+        anything else that would be useful for an employer to know.
+      </p>
+    ),
+  },
+  {
+    date: 'March 2007 - February 2010',
+    location: 'Garage Startup Studio',
+    title: 'Junior bug fixer',
+    content: (
+      <p>
+        Describe work, special projects, notable achievements, what technologies you have been working with, and
+        anything else that would be useful for an employer to know.
+      </p>
+    ),
   },
 ];
 
