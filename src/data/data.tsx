@@ -18,13 +18,6 @@ import porfolioImage1 from '../images/portfolio/portfolio-1.jpg';
 import porfolioImage2 from '../images/portfolio/portfolio-2.jpg';
 import porfolioImage3 from '../images/portfolio/portfolio-3.jpg';
 import porfolioImage4 from '../images/portfolio/portfolio-4.jpg';
-import porfolioImage5 from '../images/portfolio/portfolio-5.jpg';
-import porfolioImage6 from '../images/portfolio/portfolio-6.jpg';
-import porfolioImage7 from '../images/portfolio/portfolio-7.jpg';
-import porfolioImage8 from '../images/portfolio/portfolio-8.jpg';
-import porfolioImage9 from '../images/portfolio/portfolio-9.jpg';
-import porfolioImage10 from '../images/portfolio/portfolio-10.jpg';
-import porfolioImage11 from '../images/portfolio/portfolio-11.jpg';
 import profilepic from '../images/profilepic.jpg';
 import testimonialImage from '../images/testimonial.webp';
 import {
@@ -38,15 +31,17 @@ import {
   Social,
   TestimonialSection,
   TimelineItem,
+  achievementItem,
 } from './dataDef';
 
 /**
  * Page meta data
  */
 export const homePageMeta: HomepageMeta = {
-  title: 'React Resume Template',
-  description: "Example site built with Tim Baker's react resume template",
+  title: 'React Resume',
+  description: "Site build by Pranay Kumar",
 };
+
 
 /**
  * Section definition
@@ -59,7 +54,7 @@ export const SectionId = {
   Resume: 'resume',
   Skills: 'skills',
   Stats: 'stats',
-  Testimonials: 'testimonials',
+  Testimonials: 'Certifications',
 } as const;
 
 export type SectionId = typeof SectionId[keyof typeof SectionId];
@@ -69,18 +64,18 @@ export type SectionId = typeof SectionId[keyof typeof SectionId];
  */
 export const heroData: Hero = {
   imageSrc: heroImage,
-  name: `I'm Tim Baker.`,
+  name: `I'm Pranay Kumar`,
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I'm a Victoria based <strong className="text-stone-100">Full Stack Software Engineer</strong>, currently working
-        at <strong className="text-stone-100">Instant Domains</strong> helping build a modern, mobile-first, domain
-        registrar and site builder.
+        I'm a budding <strong className="text-slate-100">Software Engineer</strong>, currently in my semifinal year at  
+         <strong className="text-stone-100"> Bennett University</strong>. I'm passionate about <br></br>
+         <strong className="text-stone-100"> DEVOPS, Data Science</strong>.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        In my free time time, you can catch me training in <strong className="text-stone-100">Muay Thai</strong>,
-        plucking my <strong className="text-stone-100">banjo</strong>, or exploring beautiful{' '}
-        <strong className="text-stone-100">Vancouver Island</strong>.
+        In my free time time, you can catch me learning <strong className="text-stone-200">Data Science</strong>,
+        broadening my learnings <br></br><strong className="text-stone-100">MLOPS</strong>, or Playing video games 
+        like <strong className="text-stone-100">Valorant, CS:GO</strong>.
       </p>
     </>
   ),
@@ -99,28 +94,148 @@ export const heroData: Hero = {
   ],
 };
 
+
 /**
- * About section
- */
+* About section
+*/
 export const aboutData: About = {
   profileImageSrc: profilepic,
-  description: `Use this bio section as your way of describing yourself and saying what you do, what technologies you like
-  to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing
-  in.`,
+  description: `I am currently pursuing a BTech in Computer Science. I have also learneda a lot
+  in the area of cloud computing and software development methodologies. In my free time, I have
+  working on personal projects help me to further develop my skills and gain hands-on experience 
+  in DevOps and software development. I am excited to continue learning and growing`,
   aboutItems: [
-    {label: 'Location', text: 'Victoria, BC', Icon: MapIcon},
-    {label: 'Age', text: '29', Icon: CalendarIcon},
-    {label: 'Nationality', text: 'Canadian / Irish', Icon: FlagIcon},
-    {label: 'Interests', text: 'Motorcycles, Muay Thai, Banjos', Icon: SparklesIcon},
-    {label: 'Study', text: 'University of Victoria', Icon: AcademicCapIcon},
-    {label: 'Employment', text: 'Instant Domains, inc.', Icon: OfficeBuildingIcon},
+    {label: 'Location', text: 'Gurgaon, Haryana', Icon: MapIcon},
+    {label: 'Age', text: '21', Icon: CalendarIcon},
+    {label: 'Nationality', text: 'Indian', Icon: FlagIcon},
+    {label: 'Interests', text: 'Cars, PC Games, ', Icon: SparklesIcon},
+    {label: 'Study', text: 'Bennett University', Icon: AcademicCapIcon},
+    {label: 'Employment', text: 'Student', Icon: OfficeBuildingIcon},
   ],
 };
 
+
 /**
- * Skills section
- */
+* Resume section -- TODO: Standardize resume contact format or offer MDX
+*/
+export const education: TimelineItem[] = [
+  {
+    date: 'June 2020 - Present',
+    title: 'Bennett University',
+    location: 'Bachelor of Technology in Computer Science',
+    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
+  },
+  {
+    date: '2018 - 2020',
+    title: 'Venkateshwar International School',
+    location: 'Senior Secondary School',
+    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
+  },
+  {
+    date: 'uptil 2018',
+    title: 'American Montessori Public School',
+    location: 'High School',
+    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
+  },
+];
+
+
+/**
+* Experience section
+*/
+export const experience: TimelineItem[] = [
+  {
+    date: 'mid-June 2022 – mid July 2022',
+    location: 'Data Analytics Intern, Data Analytics',
+    title: 'Hewlett Packard Enterprise in collaboration with National University of Singapore',
+    content: (
+      <ul>
+        <li>
+         • Worked under the guidance of Professor Dr Amirhassan Monajemi and Dr Tan Wee Kek for developing
+          Gradient descent algorithms, training ANN, CNN, RNN, GANs, SVMs, text mining algo and learning how they
+          work in developing facial recognition and deep learning models.
+        </li>
+        <li>
+         • Learned about concepts of Cross-industry standard process for data mining (CRISP-DM), Business Analytic,
+          statistical analysis for summarizing data Dr Lek Hsiang Hui.
+        </li>
+      </ul>
+    ),
+  },
+  {
+    date: 'Sept 2021 – Sept 2022',
+    location: 'Social Media Head',
+    title: 'Indian Blockchain Fraternity',
+    content: (
+      <ul>
+        <li>
+         • Have been working in a team of 10 member to spread awareness about blockchain fundamentals in colleges
+          and universities.
+        </li>
+        <li>
+         • Helped reach out to 10k 15k new people over the tenure.
+        </li>
+      </ul>
+    ),
+  },
+];
+
+/**
+* achievements section
+*/
+export const achievements: achievementItem[] = [
+  {
+    content: <p>• Secured 2nd* Position, in BU Smart India Hackathon 2022 among 50+ registered teams at BennettUniversity, where I worked in a team of 6.</p>,
+  },
+  {
+    content: <p>• Secured 3rd* Position, in Compathon 2022 among 100 registered teams at Bennett University, where I worked as team lead in a team of 5.</p>,
+  },
+  {
+    content: <p>• Took part in Techathon 3.0 organised by iNeuron.ai where there was 500+ teams.</p>,
+  },
+  {
+    content: <p>• Geek For Geeks - 100+ questions, Code Chef - 2-star, Hacker rank - 5-star python.</p>,
+  },
+];
+
+/**
+* Skills section
+*/
 export const skills: SkillGroup[] = [
+  {
+    name: 'Cloud Platforms',
+    skills: [
+      {
+        name: 'AWS',
+        level: 9,
+      },
+      {
+        name: 'Azure',
+        level: 5,
+      },
+      {
+        name: 'GCP',
+        level: 7,
+      },
+    ],
+  },
+  {
+    name: 'Languages',
+    skills: [
+      {
+        name: 'Python',
+        level: 9,
+      },
+      {
+        name: 'Cpp',
+        level: 8,
+      },
+      {
+        name: 'HTML, CSS, JS',
+        level: 6,
+      },
+    ],
+  },
   {
     name: 'Spoken languages',
     skills: [
@@ -129,46 +244,8 @@ export const skills: SkillGroup[] = [
         level: 10,
       },
       {
-        name: 'French',
-        level: 4,
-      },
-      {
-        name: 'Spanish',
-        level: 3,
-      },
-    ],
-  },
-  {
-    name: 'Frontend development',
-    skills: [
-      {
-        name: 'React',
-        level: 9,
-      },
-      {
-        name: 'Typescript',
-        level: 7,
-      },
-      {
-        name: 'GraphQL',
-        level: 6,
-      },
-    ],
-  },
-  {
-    name: 'Backend development',
-    skills: [
-      {
-        name: 'Node.js',
-        level: 8,
-      },
-      {
-        name: 'Rust',
-        level: 5,
-      },
-      {
-        name: 'Golang',
-        level: 4,
+        name: 'Hindi',
+        level: 10,
       },
     ],
   },
@@ -183,17 +260,13 @@ export const skills: SkillGroup[] = [
         name: 'Flutter',
         level: 4,
       },
-      {
-        name: 'Swift',
-        level: 3,
-      },
     ],
   },
 ];
 
 /**
- * Portfolio section
- */
+* Portfolio section
+*/
 export const portfolioItems: PortfolioItem[] = [
   {
     title: 'Project title 1',
@@ -219,91 +292,6 @@ export const portfolioItems: PortfolioItem[] = [
     url: 'https://timbaker.me',
     image: porfolioImage4,
   },
-  {
-    title: 'Project title 5',
-    description: 'Give a short description of your project here.',
-    url: 'https://timbaker.me',
-    image: porfolioImage5,
-  },
-  {
-    title: 'Project title 6',
-    description: 'Give a short description of your project here.',
-    url: 'https://timbaker.me',
-    image: porfolioImage6,
-  },
-  {
-    title: 'Project title 7',
-    description: 'Give a short description of your project here.',
-    url: 'https://timbaker.me',
-    image: porfolioImage7,
-  },
-  {
-    title: 'Project title 8',
-    description: 'Give a short description of your project here.',
-    url: 'https://timbaker.me',
-    image: porfolioImage8,
-  },
-  {
-    title: 'Project title 9',
-    description: 'Give a short description of your project here.',
-    url: 'https://timbaker.me',
-    image: porfolioImage9,
-  },
-  {
-    title: 'Project title 10',
-    description: 'Give a short description of your project here.',
-    url: 'https://timbaker.me',
-    image: porfolioImage10,
-  },
-  {
-    title: 'Project title 11',
-    description: 'Give a short description of your project here.',
-    url: 'https://timbaker.me',
-    image: porfolioImage11,
-  },
-];
-
-/**
- * Resume section -- TODO: Standardize resume contact format or offer MDX
- */
-export const education: TimelineItem[] = [
-  {
-    date: 'April 2007',
-    location: 'Clown college',
-    title: 'Masters in Beer tasting',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
-  },
-  {
-    date: 'March 2003',
-    location: 'School of Business',
-    title: 'What did you study 101',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
-  },
-];
-
-export const experience: TimelineItem[] = [
-  {
-    date: 'March 2010 - Present',
-    location: 'Awesome Development Company',
-    title: 'Senior UX Engineer',
-    content: (
-      <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
-      </p>
-    ),
-  },
-  {
-    date: 'March 2007 - February 2010',
-    location: 'Garage Startup Studio',
-    title: 'Junior bug fixer',
-    content: (
-      <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
-      </p>
-    ),
-  },
 ];
 
 /**
@@ -313,13 +301,13 @@ export const testimonial: TestimonialSection = {
   imageSrc: testimonialImage,
   testimonials: [
     {
-      name: 'John Doe',
-      text: 'Use this as an opportunity to promote what it is like to work with you. High value testimonials include ones from current or past co-workers, managers, or from happy clients.',
-      image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/169.jpg',
+      name: 'Nvidia',
+      text: 'Fundamentals of Accelerated Computing with CUDA Python',
+      image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/14.jpg',
     },
     {
-      name: 'Jane Doe',
-      text: 'Here you should write some nice things that someone has said about you. Encourage them to be specific and include important details (notes about a project you were on together, impressive quality produced, etc).',
+      name: 'Google Cloud',
+      text: 'Preparing for Google Cloud Certification: Cloud DevOps Engineer',
       image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/14.jpg',
     },
     {
@@ -336,27 +324,27 @@ export const testimonial: TestimonialSection = {
 
 export const contact: ContactSection = {
   headerText: 'Get in touch.',
-  description: 'Here is a good spot for a message to your readers to let them know how best to reach out to you.',
+  description: 'want to get in touch? fill out the form or send me an email',
   items: [
     {
       type: ContactType.Email,
-      text: 'reachout@timbaker.me',
-      href: 'mailto:reachout@timbaker.me',
+      text: 'kumarpranay1215@gmail.com',
+      href: 'mailto:kumarpranay1215gmail.com',
     },
     {
       type: ContactType.Location,
-      text: 'Victoria BC, Canada',
-      href: 'https://www.google.ca/maps/place/Victoria,+BC/@48.4262362,-123.376775,14z',
+      text: 'Gurgaon, Haryana, India',
+      href: 'https://goo.gl/maps/2ejDRsU2tr6HBPqZ8',
     },
     {
       type: ContactType.Instagram,
-      text: '@tbakerx',
-      href: 'https://www.instagram.com/tbakerx/',
+      text: '@pip_install_pk',
+      href: 'https://www.instagram.com/pip_install_pk/',
     },
     {
       type: ContactType.Github,
-      text: 'tbakerx',
-      href: 'https://github.com/tbakerx',
+      text: 'Pranay-Kumar-1215',
+      href: 'https://github.com/Pranay-Kumar-1215',
     },
   ],
 };
@@ -365,9 +353,9 @@ export const contact: ContactSection = {
  * Social items
  */
 export const socialLinks: Social[] = [
-  {label: 'Github', Icon: GithubIcon, href: 'https://github.com/tbakerx'},
-  {label: 'Stack Overflow', Icon: StackOverflowIcon, href: 'https://stackoverflow.com/users/8553186/tim-baker'},
-  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/timbakerx/'},
-  {label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/tbakerx/'},
-  {label: 'Twitter', Icon: TwitterIcon, href: 'https://twitter.com/TimBakerx'},
+  {label: 'Github', Icon: GithubIcon, href: 'https://github.com/Pranay-Kumar-1215'},
+  {label: 'Stack Overflow', Icon: StackOverflowIcon, href: 'https://stackoverflow.com/users/19623759/pranay-kumar'},
+  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/pranay-kumar-87807920a/'},
+  {label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/pip_install_pk/'},
+  {label: 'Twitter', Icon: TwitterIcon, href: 'https://twitter.com/Pranaykumar1215'},
 ];

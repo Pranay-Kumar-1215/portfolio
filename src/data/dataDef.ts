@@ -50,6 +50,20 @@ export interface AboutItem {
 }
 
 /**
+ * Resume section
+ */
+export interface TimelineItem {
+  date: string;
+  location: string;
+  title: string;
+  content: JSX.Element;
+}
+
+export interface achievementItem {
+  content: JSX.Element;
+}
+
+/**
  * Stat section
  */
 export interface Stat {
@@ -83,15 +97,7 @@ export interface PortfolioItem {
   image: string | StaticImageData;
 }
 
-/**
- * Resume section
- */
-export interface TimelineItem {
-  date: string;
-  location: string;
-  title: string;
-  content: JSX.Element;
-}
+
 
 /**
  * Testimonial section
@@ -106,6 +112,20 @@ export interface Testimonial {
   name: string;
   text: string;
 }
+
+
+export interface TestimonialcopySection {
+  imageSrc?: string | StaticImageData;
+  testimonials: Testimonial[];
+}
+
+export interface Testimonialcopy {
+  image?: string;
+  name: string;
+  text: string;
+}
+
+
 
 /**
  * Contact section
