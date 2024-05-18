@@ -32,10 +32,20 @@ const ContactForm: FC = memo(() => {
   const handleSendMessage = useCallback(
     async (event: React.FormEvent<HTMLFormElement>) => {
       event.preventDefault();
-      /**
-       * This is a good starting point to wire up your form submission logic
-       * */
-      console.log('Data to send: ', data);
+  
+      const response = await fetch('https://new-express-project-one-coral.vercel.app/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(data)
+      });
+  
+      if (!response.ok) {
+        console.error('HTTP error', response.status);
+      } else {
+        console.log('Data sent successfully');
+      }
     },
     [data],
   );
