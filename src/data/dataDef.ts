@@ -51,14 +51,19 @@ export interface About {
 
 export interface AboutItem {
   label: string;
-  text: string;
+  text: string | JSX.Element;
   Icon?: (props: SVGProps<SVGSVGElement>) => JSX.Element;
 }
-
 
 /**
  * Resume section
  */
+export interface TimelineItemEduction {
+  date: string;
+  location: string;
+  title: string;
+}
+
 export interface TimelineItem {
   date: string;
   location: string;
